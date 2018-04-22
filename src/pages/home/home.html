@@ -6,9 +6,26 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content >
+  <button ion-button color="danger" (click)="showAlert()">Danger</button>
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" value="" [(ngModel)]= "username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password" ></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<ion-list>
+  <button>
+    {{ username }}
+  </button>  
+</ion-list>
 </ion-content>
